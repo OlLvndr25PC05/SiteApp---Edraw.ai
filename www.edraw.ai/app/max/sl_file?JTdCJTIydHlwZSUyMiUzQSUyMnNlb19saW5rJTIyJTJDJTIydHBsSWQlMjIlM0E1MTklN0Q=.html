@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en" data-platform="">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" type="image/svg+xml" href="../icons/logo.svg" />
+        <!-- <link rel="icon" type="image/svg+xml" href="./src/assets/logo.svg" /> -->
+        <meta
+            name="viewport"
+            id="viewportMeta"
+            content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover"
+        />
+        <title>Edraw.AI</title>
+        <meta
+            name="description"
+            id="description"
+            content="ONLIE_DESC_CONTENT"
+        />
+        <meta name="keywords" id="keywords" content="AI tools, ai toolset, best ai tools,mind map maker,flowchart maker,diagram maker" />
+        <style>
+            html #app,
+            html.dark #app {
+                background: linear-gradient(360deg, #141414 0%, #1f1f1f 100%);
+            }
+
+            html.light #app,
+            html[data-platform="board"] #app,
+            html[data-platform="Board"] #app {
+                background: var(
+                    --color-fill-secondary,
+                    rgb(255 255 255 / 100%)
+                );
+            }
+
+            html[lang="cn"] {
+                --typescale-family: var(--typeface-os-cn);
+            }
+
+            html[lang="cn"][data-cef="1"] {
+                --typescale-family: var(--typeface-os-cn-cef);
+            }
+        </style>
+        <script>
+            // borad加载中界面，提前执行
+            postMessage({ payload: "appendLoading" }, "*");
+        </script>
+      <script type="module" crossorigin src="https://statics.edraw.ai/app/assets/index-B67oQld-.js"></script>
+      <link rel="modulepreload" crossorigin href="https://statics.edraw.ai/app/assets/@edraw-DUt0EflT.js">
+      <link rel="modulepreload" crossorigin href="https://statics.edraw.ai/app/assets/@originjs-CbXC3QQ4.js">
+      <link rel="modulepreload" crossorigin href="https://statics.edraw.ai/app/assets/@element-plus-CrYraOFT.js">
+      <link rel="modulepreload" crossorigin href="https://statics.edraw.ai/app/assets/vue-router-C-Yn-qq_.js">
+      <link rel="modulepreload" crossorigin href="https://statics.edraw.ai/app/assets/axios-UQVE5wB3.js">
+      <link rel="modulepreload" crossorigin href="https://statics.edraw.ai/app/assets/@intlify-Ds2xcAbN.js">
+      <link rel="modulepreload" crossorigin href="https://statics.edraw.ai/app/assets/vue-i18n-3-16iNJK.js">
+      <link rel="modulepreload" crossorigin href="https://statics.edraw.ai/app/assets/mitt-DYq-OMPv.js">
+      <link rel="modulepreload" crossorigin href="https://statics.edraw.ai/app/assets/@vue-BYUDFkWN.js">
+      <link rel="modulepreload" crossorigin href="https://statics.edraw.ai/app/assets/lodash-es-DJRNANSJ.js">
+      <link rel="modulepreload" crossorigin href="https://statics.edraw.ai/app/assets/async-validator-DQVLceNc.js">
+      <link rel="modulepreload" crossorigin href="https://statics.edraw.ai/app/assets/vue-demi-CnVz9cW_.js">
+      <link rel="modulepreload" crossorigin href="https://statics.edraw.ai/app/assets/@vueuse-DZUHqtML.js">
+      <link rel="modulepreload" crossorigin href="https://statics.edraw.ai/app/assets/dayjs-C3nb6HLZ.js">
+      <link rel="modulepreload" crossorigin href="https://statics.edraw.ai/app/assets/@ctrl-DeHo1TE-.js">
+      <link rel="modulepreload" crossorigin href="https://statics.edraw.ai/app/assets/@popperjs-CWrHVmjy.js">
+      <link rel="modulepreload" crossorigin href="https://statics.edraw.ai/app/assets/normalize-wheel-es-CFy6cxYF.js">
+      <link rel="modulepreload" crossorigin href="https://statics.edraw.ai/app/assets/element-plus-OGWSUO0g.js">
+      <link rel="modulepreload" crossorigin href="https://statics.edraw.ai/app/assets/sentry-W8v6CQqv.js">
+      <link rel="modulepreload" crossorigin href="https://statics.edraw.ai/app/assets/@edrawai-CAgL3uRu.js">
+      <link rel="modulepreload" crossorigin href="https://statics.edraw.ai/app/assets/nprogress-B6B3LZ57.js">
+      <link rel="modulepreload" crossorigin href="https://statics.edraw.ai/app/assets/uuid-z9O0CCJw.js">
+      <link rel="stylesheet" crossorigin href="https://statics.edraw.ai/app/assets/element-plus-DMc9owT6.css">
+      <link rel="stylesheet" crossorigin href="https://statics.edraw.ai/app/assets/nprogress-IQvgPhqq.css">
+      <link rel="stylesheet" crossorigin href="https://statics.edraw.ai/app/assets/index-CLHIeo2g.css">
+    </head>
+    <body>
+        <div id="app"></div>
+        <script charset="UTF-8" src="https://statics.edraw.ai/app/js/sensorsdata.min.js"></script>
+        <script>
+            var sensors = window["sensorsDataAnalytic201505"] || {
+                store: {
+                    getDistinctId: () => {},
+                },
+                init: () => {},
+                quick: () => {},
+                track: () => {},
+                registerPage: () => {},
+            };
+            sensors.init({
+                server_url:
+                    "https://analytics.wondershare.cc:8106/sa?project=UA_EdrawAI_web",
+                is_track_single_page: true,
+                use_client_time: true,
+                send_type: "beacon",
+                show_log: false,
+                is_track_device_id: true,
+                heatmap: {
+                    clickmap: "default",
+                    scroll_notice_map: "default",
+                    collect_tags: {
+                        div: true,
+                    },
+                },
+            });
+            sensors.quick("autoTrack");
+            window.$sensors = sensors;
+        </script>
+        <script>
+            window.CLIENT_PARAMS = {
+                pver: "v1.0.0", // 产品版本 String类型
+                did: sensors.store.getDistinctId(), // distinct_id(用户的设备id) String类型
+                pid: "20032", // 产品id(产品id的语言将作为对话框默认文案语言) String类型
+                theme: "dark", // 智能客服主题色 String类型 light | dark
+                showBubble: "false", // 是展示初始气泡 String类型 true | false
+                extra: "", //  拓展参数 String类型
+                embed: "self", // 嵌入类型 String类型 web | app | self
+                langId: "1", // 语言id String类型
+                uid: "", // 用户的wsid String类型 非必传, 容器cookie中存在user_identity时智能客服可自动识别
+            };
+            window.___crm40_hide_chatbot_bubble_mode___ = true;
+        </script>
+        <script
+            id="ws-snippet"
+            crossorigin="anonymous"
+            src="https://crm-static.wondershare.cc/chatbot/latest/assets/snippet.js?key=29e28058-7809-4178-b6ef-e36f0e19d0a2"
+        ></script>
+
+        <!-- Google Tag Manager -->
+        <script
+            async=""
+            src="https://www.googletagmanager.com/gtm.js?id=GTM-T7HLC79"
+        ></script>
+        <script>
+            (function (w, d, s, l, i) {
+                w[l] = w[l] || [];
+                w[l].push({
+                    "gtm.start": new Date().getTime(),
+                    event: "gtm.js",
+                });
+                const f = d.getElementsByTagName(s)[0],
+                    j = d.createElement(s),
+                    dl = l != "dataLayer" ? "&l=" + l : "";
+                j.async = true;
+                j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+                f.parentNode.insertBefore(j, f);
+            })(window, document, "script", "dataLayer", "GTM-T7HLC79");
+        </script>
+
+        <!-- 销售归因统计 -->
+        <script
+            type="text/javascript"
+            src="https://dc-static.wondershare.cc/account_center/mk_channel_sdk.js"
+        ></script>
+
+        <!-- 停服通告 -->
+        <script
+            type="text/javascript"
+            src="../../notify/test/notice.js"
+        ></script>
+    </body>
+</html>
+
+<script>(function(){
+		return {"subject":"fix: 线上edraw.ai native接口替换","date":"1/15/2025, 6:37:56 AM"}
+	})()</script>
+<script>(function(){
+		return {"httpApiBase":"api.edraw.ai","privatizeEnv":"","uiLang":"EN","sentryDsnUrl":"https://34592a34aa16676fbfe72b1c93ee3e76@sentry.edrawsoft.com/5","sentryTracesSamplerate":"0.3","httpCdnBase":"statics.edraw.ai","runProjectEnv":""}
+	})()</script>
